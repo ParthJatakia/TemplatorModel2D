@@ -1,0 +1,6 @@
+U = np.full((size, size), 2, dtype=float )
+for i in range(size):
+    for j in range(size):
+        x = i - size/2.0
+        y = j - size/2.0
+        U[i,j] = np.sin((np.sqrt(x**2 + y**2)*2*np.pi*p/size)**2)
